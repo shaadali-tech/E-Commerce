@@ -4,8 +4,10 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 
 import Navbar from "./Components/Navbar";
-import Catalog from "./pages/Catalog";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import Catalog from "./pages/catalog";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Catalog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>

@@ -21,6 +21,11 @@ const Navbar = () => {
               Cart
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link text-white" to="/wishlist">
+              Wishlist
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addToCart } from "../Features/cart/cartSlice";
+import { addToCart, addToWishlist } from "../Features/cart/cartSlice";
 
 function ProductCard({ product }) {
   const dispatch = useDispatch();
@@ -16,12 +16,20 @@ function ProductCard({ product }) {
         <h5 className="card-title">{product.title}</h5>
         <p className="card-text fw-bold text-success">${product.price}</p>
         <p className="card-text text-muted">{product.category}</p>
-        <button
-          className="btn btn-primary mt-auto"
-          onClick={() => dispatch(addToCart(product))}
-        >
-          Add to Cart
-        </button>
+        <div>
+          <button
+            className="btn btn-outline-primary me-2"
+            onClick={() => dispatch(addToCart(product))}
+          >
+            Add to Cart
+          </button>
+          <button
+            className="btn btn-outline-secondary"
+            onClick={() => dispatch(addToWishlist(product))}
+          >
+            Add to Wishlist
+          </button>
+        </div>
       </div>
     </div>
   );
