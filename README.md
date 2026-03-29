@@ -22,10 +22,3 @@ https://github.com/shaadali-tech/E-Commerce
 - Bootstrap
 - React Router
 
-## 📸 Screenshots
-(Add screenshots here)
-
-## ⚙️ Installation
-```bash
-npm install
-npm run dev
