@@ -4,6 +4,7 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import "./index.css";
 import Navbar from "./Components/Navbar";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Orders from "./pages/Orders";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Catalog from "./pages/catalog";
