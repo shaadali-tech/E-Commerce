@@ -16,7 +16,6 @@ function Catalog() {
 
   if (Loading) return <Loader />;
 
-  // Get unique categories
   const categories = [...new Set(products.map((product) => product.category))];
 
   return (

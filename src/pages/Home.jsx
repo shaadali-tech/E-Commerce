@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 500); // simulate loading
+    }, 500);
   }, []);
 
   if (Loading) return <Loader />;

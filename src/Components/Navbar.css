@@ -1,0 +1,22 @@
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #dbeafe !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid white;
+  font-weight: 600;
+}
+
+.nav-link svg {
+  transition: 0.3s;
+}
+
+.nav-link:hover svg {
+  transform: scale(1.1);
+}

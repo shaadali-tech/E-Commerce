@@ -4,7 +4,7 @@ const Orders = () => {
   const orders = useSelector((state) => state.placeOrderReducer.orders);
   return (
     <div className="container-md">
-      <div className="card w-50 mx-auto p-4 mt-4">
+      <div className="card orders-responsive-card p-4 mt-4 mx-auto">
         <h1 className="mb-3">Your Orders</h1>
         {orders.length > 0 ? (
           <ul className="list-group">

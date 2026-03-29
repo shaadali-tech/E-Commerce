@@ -44,7 +44,7 @@ const Cart = () => {
 
   return (
     <div className="container-md">
-      <div className="card w-50 mx-auto p-4 mt-4">
+      <div className="card cart-responsive-card p-4 mt-4 mx-auto">
         <h1 className="mb-3">Your Shopping Cart</h1>
 
         {cart.items.length > 0 ? (

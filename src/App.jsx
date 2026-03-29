@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Toaster position="top-center" />
-      <Navbar />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,12 +31,6 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/orders" element={<Orders />} />
       </Routes>
-      <button
-        className="btn btn-secondary position-fixed top-0 end-0 m-3"
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
-      </button>
     </Router>
   );
 }
