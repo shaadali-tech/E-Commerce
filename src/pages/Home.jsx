@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProductCard from "../Components/ProductCard";
 import products from "../Api/product";
+import Loader from "../Components/Loader";
 
 function Home() {
+  const [Loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500); // simulate loading
+  }, []);
+
+  if (Loading) return <Loader />;
   return (
     <div className="container">
       <div className="row g-4">

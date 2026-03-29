@@ -1,0 +1,20 @@
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .navbar {
+  background-color: #1a1a1a !important;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+  background-color: #2a2a2a;
+  color: white;
+  border-color: #444;
+}

@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "../Components/ProductCard";
 import products from "../Api/product";
-
+import Loader from "../Components/Loader";
 function Catalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [sort, setSort] = useState("");
+  const [Loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+
+  if (Loading) return <Loader />;
 
   // Get unique categories
   const categories = [...new Set(products.map((product) => product.category))];

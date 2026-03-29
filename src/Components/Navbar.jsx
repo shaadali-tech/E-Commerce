@@ -26,6 +26,11 @@ const Navbar = () => {
               Wishlist
             </Link>
           </li>
+          <li>
+            <Link className="nav-link text-white" to="/orders">
+              Orders
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

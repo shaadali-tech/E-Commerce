@@ -4,6 +4,10 @@ const initialState = {
   items: [],
 };
 
+const orderInitialState = {
+  orders: [],
+};
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
@@ -44,6 +48,9 @@ const cartSlice = createSlice({
         existingItem.quantity += 1;
       }
     },
+    clearCart: (state) => {
+      state.items = [];
+    },
   },
 });
 
@@ -66,11 +73,29 @@ const WishlistSlice = createSlice({
   },
 });
 
+const placeorder = createSlice({
+  name: "placeorder",
+  initialState: orderInitialState,
+  reducers: {
+    placeOrder: (state, action) => {
+      state.orders.push({
+        id: Date.now(),
+        items: action.payload.items,
+        total: action.payload.total,
+        address: action.payload.address,
+        date: new Date().toLocaleString(),
+      });
+    },
+  },
+});
+
 // export action
-export const { addToCart, removefromcart, increaseQuantity } =
+export const { addToCart, removefromcart, increaseQuantity, clearCart } =
   cartSlice.actions;
 
 // export reducer
 export default cartSlice.reducer;
 export const { addToWishlist, removefromWishlist } = WishlistSlice.actions;
 export const wishlistReducer = WishlistSlice.reducer;
+export const { placeOrder } = placeorder.actions;
+export const placeOrderReducer = placeorder.reducer;
