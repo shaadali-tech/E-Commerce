@@ -5,9 +5,9 @@ import { Sun, Moon } from "lucide-react";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm mb-4">
       <div className="container-fluid">
-        <h1 className="navbar-brand mb-0 fw-bold">My Store</h1>
+        <h1 className="navbar-brand mb-0 fw-bold">QuickCart</h1>
 
         <ul className="navbar-nav ms-auto flex-row gap-3 align-items-center">
           <li className="nav-item">

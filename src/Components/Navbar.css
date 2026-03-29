@@ -3,7 +3,9 @@
   font-weight: 500;
   transition: 0.3s;
 }
-
+.navbar {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
 .nav-link:hover {
   color: #dbeafe !important;
 }
