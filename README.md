@@ -1,16 +1,31 @@
-# React + Vite
+# 🛒 QuickCart – E-commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce web application built using React and Redux.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+https://e-commerce-pybx.onrender.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 GitHub Repo
+https://github.com/shaadali-tech/E-Commerce
 
-## React Compiler
+## ✨ Features
+- Product catalog with search & filter
+- Add to cart with quantity management
+- Wishlist functionality
+- Order system
+- Dark mode
+- Responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- React
+- Redux Toolkit
+- Bootstrap
+- React Router
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
+(Add screenshots here)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Installation
+```bash
+npm install
+npm run dev
